@@ -7,7 +7,67 @@
     tools:context=".MainActivity">
 
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#2196F3"
+        android:src="@drawable/baseline_access_time_white_18dp"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_button_1"
+        app:layout_constraintEnd_toStartOf="@+id/fab_button_1"
+        app:layout_constraintTop_toBottomOf="@+id/fab_button_3"
+        app:layout_constraintVertical_bias="1.0" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#9C27B0"
+        android:src="@drawable/ic_send"
+        android:tint="#FFFFFF"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_button_1"
+        app:layout_constraintEnd_toStartOf="@+id/fab_button_2"
+        app:layout_constraintTop_toTopOf="@+id/fab_button_2"
+        app:layout_constraintVertical_bias="0.222"
+        app:rippleColor="#28FFFFFF" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F44336"
+        android:src="@drawable/ic_favorite"
+        android:tint="#FFFFFF"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fab_button_1"
+        app:layout_constraintEnd_toEndOf="@+id/fab_button_1"
+        app:layout_constraintStart_toStartOf="@+id/fab_button_1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="725dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#009688"
+        android:src="@drawable/ic_add"
+        android:tint="#FFFFFF"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#28FFFFFF" />
 
     <com.camerakit.CameraKitView
         android:id="@+id/camera"
@@ -24,6 +84,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
 
+        <com.ramotion.fluidslider.FluidSlider
+            android:id="@+id/fluidSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/_550mdp"
+            android:layout_marginEnd="0dp"
+            android:elevation="2dp"
+            app:bar_color="#4CAF50"
+            app:duration="@android:integer/config_mediumAnimTime"
+            app:size="small"
+            tools:targetApi="lollipop" />
+
+        <com.github.florent37.androidslidr.Slidr
+            android:id="@+id/Slidr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="2dp"
+            app:slidr_region_leftColor="@android:color/holo_green_light"
+            app:slidr_region_rightColor="@android:color/holo_red_light"
+            app:slidr_regions="false"
+            app:slidr_regions_centerText="false" />
     </com.camerakit.CameraKitView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
